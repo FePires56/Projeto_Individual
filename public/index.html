@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AcquaTec | Página Inicial</title>
+
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">FPGames</h1>
+            <ul class="navbar">
+                <li class="li_login">
+                    <a href="./login.html">Inicio</a>
+                </li>
+                <li class="li_cadastro">
+                    <a class="a_login" href="./cadastro.html">Comunidade</a>
+                </li>
+                <div class="div_perfil">
+                    <img onclick="select_perfil()" src="img/perfil_pessoa.png" height="16px">
+                    <img id="seta" onclick="select_perfil()" src="img/seta.png" height="12px">
+                </div>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="container container_select">
+        <div id="id_select" class="div_select">
+            <div class="itens_select sobrenos_select">
+                <div class="espacamento_select">
+                    <img src="img/coroa.png">
+                    <b><a class="a_select" href="">Sobre nós</a></b>
+                </div>
+            </div>
+
+            <div class="itens_select suporte_select">
+                <div class="espacamento_select">
+                    <img src="img/interrogacao.png">
+                    <b><a class="a_select" href="">Suporte</a></b>
+                </div>
+            </div>
+            <div class="itens_select login_select">
+                <div class="espacamento_select">
+                    <img src="img/saida.png">
+                    <b class="b_select"><a class="a_select" href="">Fazer login</a></b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="espacamento"></div>
+
+    <div id="index">
+        <div class="container">
+            <div class="carrossel">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide first">
+                            <img src="img/slide1.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/slide2.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/slide3.jpg">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn active"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+
+
+
+        <section id="jogos">
+
+            <div class="btns_categorias">
+                <button class="btn_categoria" id="btn_todos">Todos</button>
+                <button class="btn_categoria" id="btn_aventura">Ação e aventura</button>
+                <button class="btn_categoria" id="btn_acao">Ação</button>
+                <button class="btn_categoria" id="btn_terror">Terror</button>
+                <button class="btn_categoria" id="btn_estrategia">Estratégia</button>
+                <button class="btn_categoria" id="btn_esporte">Esportes</button>
+                <button class="btn_categoria" id="btn_diversao">Diversão</button>
+                <button class="btn_categoria" id="btn_FPS">FPS</button>
+                <button class="btn_categoria" id="btn_RPG">RPG</button>
+            </div>
+
+            <div class="todos" id="areaJogos_1">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/bf4.jpg" alt=""></div>
+                            <h1 class="title">Battlefield IV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/prey.webp" alt=""></div>
+                            <h1 class="title">Prey</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fortnite.jpg" alt=""></div>
+                            <h1 class="title">Fortnite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/final_fantasy.jpg" alt=""></div>
+                            <h1 class="title">Final Fantasy XV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/f1.jpg" alt=""></div>
+                            <h1 class="title">Fórmula 1</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/hollow_knight.jpg" alt=""></div>
+                            <h1 class="title">Hollow Knight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/r6.jpg" alt=""></div>
+                            <h1 class="title">Rainbow Six | Siege</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/cod.jpg" alt=""></div>
+                            <h1 class="title">Call of Duty | Warzone</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/brawlhalla.jpg" alt=""></div>
+                            <h1 class="title">Brawlhalla</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/among.jpg" alt=""></div>
+                            <h1 class="title">Among Us</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fall_guys.jpg" alt=""></div>
+                            <h1 class="title">Fall Guys</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/minecraft.jpg" alt=""></div>
+                            <h1 class="title">Minecraft</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/paladins.webp" alt=""></div>
+                            <h1 class="title">Paladins</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/overwatch.webp" alt=""></div>
+                            <h1 class="title">Overwatch</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/new_world.jpg" alt=""></div>
+                            <h1 class="title">New World</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/halo_infinite.jpg" alt=""></div>
+                            <h1 class="title">Halo Infinite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dbd.jpg" alt=""></div>
+                            <h1 class="title">Dead by Daylight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/visage.jpg" alt=""></div>
+                            <h1 class="title">Visage</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/outlast2.jpg" alt=""></div>
+                            <h1 class="title">OutLast 2</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/residente_evel7.jpg" alt=""></div>
+                            <h1 class="title">Residente Evil 7</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/lol.jpg" alt=""></div>
+                            <h1 class="title">League of Legends</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/gta5.webp" alt=""></div>
+                            <h1 class="title">GTA V</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/ghost_recon.jpg" alt=""></div>
+                            <h1 class="title">Ghost Recon | Wildland</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dead_space2.jpg" alt=""></div>
+                            <h1 class="title">Dead Space 2</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fifa 22.jpg" alt=""></div>
+                            <h1 class="title">FIFA 22</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/NBA22.webp" alt=""></div>
+                            <h1 class="title">NBA 2K22</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/civilization_VI.jpg" alt=""></div>
+                            <h1 class="title">Civilization VI</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/the_witcher3.jpg" alt=""></div>
+                            <h1 class="title">The Witcher 3</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="aventura" id="areaJogos_2" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/final_fantasy.jpg" alt=""></div>
+                            <h1 class="title">Final Fantasy XV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/hollow_knight.jpg" alt=""></div>
+                            <h1 class="title">Hollow Knight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/minecraft.jpg" alt=""></div>
+                            <h1 class="title">Minecraft</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/new_world.jpg" alt=""></div>
+                            <h1 class="title">New World</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/halo_infinite.jpg" alt=""></div>
+                            <h1 class="title">Halo Infinite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/the_witcher3.jpg" alt=""></div>
+                            <h1 class="title">The Witcher 3</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="acao" id="areaJogos_3" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/prey.webp" alt=""></div>
+                            <h1 class="title">Prey</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/bf4.jpg" alt=""></div>
+                            <h1 class="title">Battlefield IV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/r6.jpg" alt=""></div>
+                            <h1 class="title">Rainbow Six | Siege</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/cod.jpg" alt=""></div>
+                            <h1 class="title">Call of Duty | Warzone</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/halo_infinite.jpg" alt=""></div>
+                            <h1 class="title">Halo Infinite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dbd.jpg" alt=""></div>
+                            <h1 class="title">Dead by Daylight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/residente_evel7.jpg" alt=""></div>
+                            <h1 class="title">Residente Evil 7</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/paladins.webp" alt=""></div>
+                            <h1 class="title">Paladins</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/overwatch.webp" alt=""></div>
+                            <h1 class="title">Overwatch</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/gta5.webp" alt=""></div>
+                            <h1 class="title">GTA V</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/ghost_recon.jpg" alt=""></div>
+                            <h1 class="title">Ghost Recon | Wildland</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dead_space2.jpg" alt=""></div>
+                            <h1 class="title">Dead Space 2 </h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/the_witcher3.jpg" alt=""></div>
+                            <h1 class="title">The Witcher 3</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="terror" id="areaJogos_4" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dbd.jpg" alt=""></div>
+                            <h1 class="title">Dead by Daylight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/visage.jpg" alt=""></div>
+                            <h1 class="title">Visage</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/outlast2.jpg" alt=""></div>
+                            <h1 class="title">OutLast 2</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/residente_evel7.jpg" alt=""></div>
+                            <h1 class="title">Residente Evil 7</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/prey.webp" alt=""></div>
+                            <h1 class="title">Prey</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="estrategia" id="areaJogos_5" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/hollow_knight.jpg" alt=""></div>
+                            <h1 class="title">Hollow Knight</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/among.jpg" alt=""></div>
+                            <h1 class="title">Among Us</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/lol.jpg" alt=""></div>
+                            <h1 class="title">League of Legends</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/civilization_VI.jpg" alt=""></div>
+                            <h1 class="title">Civilization</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="esportes" id="areaJogos_6" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/f1.jpg" alt=""></div>
+                            <h1 class="title">Fórmula 1</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fifa 22.jpg" alt=""></div>
+                            <h1 class="title">FIFA 22</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/NBA22.webp" alt=""></div>
+                            <h1 class="title">NBA 2K22</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="diversao" id="areaJogos_7" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fortnite.jpg" alt=""></div>
+                            <h1 class="title">Fortnite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/among.jpg" alt=""></div>
+                            <h1 class="title">Among Us</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/brawlhalla.jpg" alt=""></div>
+                            <h1 class="title">Brawlhalla</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fall_guys.jpg" alt=""></div>
+                            <h1 class="title">Fall Guys</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/minecraft.jpg" alt=""></div>
+                            <h1 class="title">Minecraft</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="FPS" id="areaJogos_8" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/bf4.jpg" alt=""></div>
+                            <h1 class="title">Battlefield IV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/fortnite.jpg" alt=""></div>
+                            <h1 class="title">Fortnite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/r6.jpg" alt=""></div>
+                            <h1 class="title">Rainbow Six | Siege</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/cod.jpg" alt=""></div>
+                            <h1 class="title">Call of Duty | Warzone</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/paladins.webp" alt=""></div>
+                            <h1 class="title">Paladins</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/overwatch.webp" alt=""></div>
+                            <h1 class="title">Overwatch</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/halo_infinite.jpg" alt=""></div>
+                            <h1 class="title">Halo Infinite</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/gta5.webp" alt=""></div>
+                            <h1 class="title">GTA V</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/ghost_recon.jpg" alt=""></div>
+                            <h1 class="title">Ghost Recon | Wildland</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/dead_space2.jpg" alt=""></div>
+                            <h1 class="title">Dead Space 2</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="RPG" id="areaJogos_9" style="display: none;">
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/final_fantasy.jpg" alt=""></div>
+                            <h1 class="title">Final Fantasy XV</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/new_world.jpg" alt=""></div>
+                            <h1 class="title">New World</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/lol.jpg" alt=""></div>
+                            <h1 class="title">League of Legends</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/jogos/the_witcher3.jpg" alt=""></div>
+                            <h1 class="title">The Witcher 3</h1>
+                            <button class="btn">Jogar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var booleanPerfil = 0
+
+    function select_perfil() {
+        if (booleanPerfil == 0) {
+            booleanPerfil = 1
+            id_select.classList.add('show')
+            seta.classList.add('virar')
+        } else {
+            booleanPerfil = 0
+            id_select.classList.remove('show')
+            seta.classList.remove('virar')
+
+        }
+    }
+</script>

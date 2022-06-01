@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AcquaTec | Cadastro</title>
+
+
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" href="./assets/icon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./js/cadastro.js"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">AcquaTec</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">
+                        Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href="./simulador.html">Simulador</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <li class="agora">
+                    <a href="./cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header fim-->
+
+
+    <section id="index_cadastro">
+        <div class="box_cadastro">
+            <!-- <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>-->
+
+            <div class="container">
+                <div class="card_cadastro">
+
+                    <div class="input_cadastro">
+                        <input id="nome_input" type="text" placeholder="Informe seu nome:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <input id="email_input" type="text" placeholder="Informe seu e-mail:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <div id="checkbox">
+                            <img id="img_ocultar" src="img/oculto.png" alt="ocultar" style="width: 25px;"
+                                onclick="mostrar()">
+                        </div>
+                        <input id="in_senha" type="password" placeholder="Informe sua senha:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <input id="in_senha2" type="password" placeholder="Confirme sua senha:">
+                    </div>
+
+
+
+                    <div class="btn_container">
+                        <div class="btn_cadastro">
+                            <a class="a_cadastro" href="#" onclick="cadastrar()">Entrar</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div id="div_aguardar" class="loading-div"> 
+                    <img src="./img/circle-loading.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+
+                </div>-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

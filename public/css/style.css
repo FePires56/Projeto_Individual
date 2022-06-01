@@ -1,0 +1,452 @@
+/*Inicio carrossel*/
+
+#index {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  height: 80vh;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 34%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.manual-navigation {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.manual-btn {
+  border: 4px solid #4c0c80;
+  padding: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #9781bd;
+}
+
+.active {
+  background-color: #9781bd;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -34%;
+}
+
+#radio3:checked~.first {
+  margin-left: -68%;
+}
+
+/*Fim do carrossel*/
+
+/*Inicio do carrossel dos jogos*/
+
+#jogos {
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.btns_categorias {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8vh;
+  justify-content: space-between;
+}
+
+.btn_categoria {
+  width: 8vw;
+  color: #ffffff;
+  background-color:#382F48;
+  padding: 20px 25px;
+  border: 3px solid #4c0c80;
+  border-radius: 30px;
+}
+
+.btn_categoria:hover, .btn_categoria:focus {
+  background-color: #50485E;
+}
+
+.btn_categoria:focus{
+  border: 3px solid #ffffff;
+}
+
+.fila {
+  margin-bottom: 4vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fila img {
+  width: 100px;
+}
+
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 20px 0;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #241935;
+  margin: 0 15px;
+}
+
+.card img {
+  width: 20vw;
+  height: 30vh;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.card .btn {
+  background-color: #2fb84c;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 10x 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #368a48;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOGIN */
+
+.banner .container .card {
+  background-color: #e5e5e5;
+  height: fit-content;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: palevioletred;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card h2 {
+  font-size: 30px;
+}
+
+.card h4 {
+  font-size: 16px;
+}
+
+.banner #div_erros_login {
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* FORMULARIO */
+
+.alerta_erro {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_erro {
+  display: none;
+  background-color: #fff;
+  color: black;
+  width: 230px;
+  position: fixed;
+  border-radius: 4px;
+  border: #e6005a 3px solid;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.card_erro #mensagem_erro {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.formulario .tipo_campo {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  border: 2px solid #32b9cd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn {
+  font-family: "Barlow", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #e6005a;
+  width: 120px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.loading-div {
+  width: 50px;
+  margin: auto;
+  display: none;
+}
+
+.loading-div img {
+  height: 50px;
+  width: 50px;
+}
+
+/* PAGINA DOS GRÁFICOS */
+
+.janela {
+  display: flex;
+  width: 100vw;
+}
+
+.header-left a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 3px solid #32b9cd;
+  background-color: #212124;
+  /* border: 3px solid pink; */
+}
+
+.dash-right {
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  background-color: #161618;
+  position: relative;
+  top: 0;
+  left: 25%;
+}
+
+.header-left h1 {
+  color: #32b9cd;
+}
+
+.hello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hello h3 {
+  color: #e3b062;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hello h3 span {
+  font-weight: 800;
+}
+
+.btn-nav {
+  width: 40%;
+  color: white;
+  background-color: #e6005a;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.btn-nav-white {
+  width: 40%;
+  background-color: white;
+  border: 3px solid #e6005a;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.btn-nav-white h3 {
+  color: #e6005a;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-nav h3,
+.btn-logout h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-logout {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #32b9cd;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}

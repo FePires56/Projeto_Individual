@@ -1,0 +1,123 @@
+#index_cadastro {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_cadastro{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.card_cadastro{
+    margin: auto;
+    display: flex;
+    height: 70vh;
+    width: 40vw;
+    background-color: #0000007e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #810baf;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    overflow: hidden;
+}
+
+.input_cadastro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.input_cadastro img {
+    position: absolute;
+    left: 92%;
+    bottom: calc(100% - 10px);
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10%;
+    border: none;
+    border-bottom: 2px solid #8f8f8f;
+    outline: 0px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 20px;
+    text-indent:4%;
+}
+
+::-webkit-input-placeholder {
+    
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn_container{
+    z-index: 1;
+}
+
+.btn_cadastro{
+    display: flex;
+    position: relative;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn_cadastro::before{
+    content: "";
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    background: conic-gradient(#4a0a7e, #970cce);
+    animation: efeito 1.2s ease infinite;
+    transition: 0.5s ease;
+}
+
+@keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn_container:hover .btn_cadastro::before{
+    background: #970cce;
+}
+
+.a_cadastro{
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 98%;
+    height: 95%;
+    color: #ffffff;
+    background-color: #280b3f;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.a_cadastro:hover{
+    background-color: #561888;
+}
+
