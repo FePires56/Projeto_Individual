@@ -62,19 +62,11 @@ var btnDiversao = document.getElementById("btn_diversao")
 var btnFPS = document.getElementById("btn_FPS")
 var btnRPG = document.getElementById("btn_RPG")
 
-btnTodos.addEventListener("click", todos )
-function todos() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
 
-    areaJogos_1.style.display = "flex"
+function todos() {
+
+
+    areaJogos_1.style.display = "block"
     areaJogos_2.style.display = "none"
     areaJogos_3.style.display = "none"
     areaJogos_4.style.display = "none"
@@ -83,24 +75,15 @@ function todos() {
     areaJogos_7.style.display = "none"
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
-    
-    btnTodos.innerHTML = "todos"
+
+    btnAventura.innerHTML = "todos"
 }
 
-btnTodos.addEventListener("click", aventura)
 function aventura() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
-    areaJogos_2.style.display = "flex"
+    areaJogos_2.style.display = "block"
     areaJogos_3.style.display = "none"
     areaJogos_4.style.display = "none"
     areaJogos_5.style.display = "none"
@@ -112,21 +95,12 @@ function aventura() {
     btnAventura.innerHTML = "aventura"
 }
 
-btnTodos.addEventListener("click", acao)
 function acao() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
-    areaJogos_3.style.display = "flex"
+    areaJogos_3.style.display = "block"
     areaJogos_4.style.display = "none"
     areaJogos_5.style.display = "none"
     areaJogos_6.style.display = "none"
@@ -134,96 +108,59 @@ function acao() {
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
     
-    btnAcao.innerHTML = "acao"
+    btnAventura.innerHTML = "acao"
 }
 
-btnTodos.addEventListener("click", terror)
 function terror() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
     areaJogos_3.style.display = "none"
-    areaJogos_4.style.display = "flex"
+    areaJogos_4.style.display = "block"
     areaJogos_5.style.display = "none"
     areaJogos_6.style.display = "none"
     areaJogos_7.style.display = "none"
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
     
-    btnTerror.innerHTML = "terror"
+    btnAventura.innerHTML = "terror"
 }
 
-
-btnTodos.addEventListener("click", estrategia)
 function estrategia() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
     areaJogos_3.style.display = "none"
     areaJogos_4.style.display = "none"
-    areaJogos_5.style.display = "flex"
+    areaJogos_5.style.display = "block"
     areaJogos_6.style.display = "none"
     areaJogos_7.style.display = "none"
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
     
-    btnEstrategia.innerHTML = "estrategia"
+    btnAventura.innerHTML = "estrategia"
 }
 
-btnTodos.addEventListener("click", esportes)
-function esportes() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+function esporte() {
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
     areaJogos_3.style.display = "none"
     areaJogos_4.style.display = "none"
     areaJogos_5.style.display = "none"
-    areaJogos_6.style.display = "flex"
+    areaJogos_6.style.display = "block"
     areaJogos_7.style.display = "none"
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
     
-    btnEsporte.innerHTML = "esportes"
+    btnAventura.innerHTML = "esporte"
 }
 
-btnTodos.addEventListener("click", diversao)
 function diversao() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
@@ -231,24 +168,15 @@ function diversao() {
     areaJogos_4.style.display = "none"
     areaJogos_5.style.display = "none"
     areaJogos_6.style.display = "none"
-    areaJogos_7.style.display = "flex"
+    areaJogos_7.style.display = "block"
     areaJogos_8.style.display = "none"
     areaJogos_9.style.display = "none"
     
-    btnDiversao.innerHTML = "diversao"
+    btnAventura.innerHTML = "diversao"
 }
 
-btnTodos.addEventListener("click", FPS)
 function FPS() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
@@ -257,23 +185,14 @@ function FPS() {
     areaJogos_5.style.display = "none"
     areaJogos_6.style.display = "none"
     areaJogos_7.style.display = "none"
-    areaJogos_8.style.display = "flex"
+    areaJogos_8.style.display = "block"
     areaJogos_9.style.display = "none"
     
-    btnFPS.innerHTML = "FPS"
+    btnAventura.innerHTML = "FPS"
 }
 
-btnTodos.addEventListener("click", RPG)
 function RPG() {
-    let areaJogos_1 = document.getElementById("areaJogos_1")
-    let areaJogos_2 = document.getElementById("areaJogos_2")
-    let areaJogos_3 = document.getElementById("areaJogos_3")
-    let areaJogos_4 = document.getElementById("areaJogos_4")
-    let areaJogos_5 = document.getElementById("areaJogos_5")
-    let areaJogos_6 = document.getElementById("areaJogos_6")
-    let areaJogos_7 = document.getElementById("areaJogos_7")
-    let areaJogos_8 = document.getElementById("areaJogos_8")
-    let areaJogos_9 = document.getElementById("areaJogos_9")
+
 
     areaJogos_1.style.display = "none"
     areaJogos_2.style.display = "none"
@@ -283,7 +202,7 @@ function RPG() {
     areaJogos_6.style.display = "none"
     areaJogos_7.style.display = "none"
     areaJogos_8.style.display = "none"
-    areaJogos_9.style.display = "flex"
+    areaJogos_9.style.display = "block"
     
-    btnRPG.innerHTML = "RPG"
+    btnAventura.innerHTML = "RPG"
 }

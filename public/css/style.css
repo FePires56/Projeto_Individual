@@ -38,9 +38,11 @@
 
 .manual-navigation {
   position: relative;
+  bottom: calc(100% - 78vh);
   margin: auto;
   display: flex;
   justify-content: center;
+  
   z-index: 1;
 }
 
@@ -81,7 +83,7 @@
 /*Inicio do carrossel dos jogos*/
 
 #jogos {
-  margin-top: 14vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: column;
 }
