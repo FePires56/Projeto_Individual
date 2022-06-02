@@ -5,9 +5,10 @@
 }
 
 body {
-  background: linear-gradient(90deg, #500b88, #1f082b, #500b88);
+  background: linear-gradient(65deg, #500b88, #400d9e, #0b3388);
   background-size: 600% 600%;
-  animation: colors 20s ease infinite;
+  animation: colors 6
+  s ease infinite;
   animation-direction: alternate;
 }
 
@@ -38,11 +39,12 @@ a {
 .header {
   background-color: #280b3f;
   display: flex;
-  height: 70px;
+  height: 10vh;
   width: 100%;
   border-bottom: 3px solid #810baf;
   justify-content: center;
   position: fixed;
+  overflow: hidden;
   z-index: 2;
 }
 
@@ -69,6 +71,7 @@ a {
 
 
 .titulo {
+  margin-top: 2vh;
   color: #32b9cd;
   width: fit-content;
   font-weight: 500;
@@ -171,5 +174,4 @@ a {
 .li_cadastro:hover {
   background-color: #77e1f1;
 }
-
 /*Inicio header*/

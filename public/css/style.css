@@ -98,21 +98,27 @@
   justify-content: space-between;
 }
 
+
 .btn_categoria {
   width: 8vw;
   color: #ffffff;
-  background-color:#382F48;
-  padding: 20px 25px;
-  border: 3px solid #4c0c80;
   border-radius: 30px;
+  padding: 20px 25px;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(65deg, #2264dd, #2fb84c);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #382F48 inset;
 }
 
+
 .btn_categoria:hover, .btn_categoria:focus {
-  background-color: #50485E;
+  box-shadow: 2px 1000px 1px #50485E inset
 }
 
 .btn_categoria:focus{
-  border: 3px solid #ffffff;
+  border: 3px solid #2fb84c;
 }
 
 .fila {
