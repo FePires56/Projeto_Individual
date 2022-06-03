@@ -96,7 +96,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
 #parte1::before {
     content: '';
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     position: absolute;
     background: #000000b2
 }
@@ -163,7 +163,7 @@ h2 {
     margin-top: 2%;
     padding: 0;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     flex-direction: column;
