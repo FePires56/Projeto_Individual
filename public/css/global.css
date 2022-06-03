@@ -7,8 +7,7 @@
 body {
   background: linear-gradient(65deg, #500b88, #400d9e, #0b3388);
   background-size: 600% 600%;
-  animation: colors 6
-  s ease infinite;
+  animation: colors 6s ease infinite;
   animation-direction: alternate;
 }
 
@@ -23,7 +22,7 @@ body {
 }
 
 #espacamento {
-  height: 7.8vh;
+  height: 6vh;
 }
 
 a {
@@ -39,7 +38,7 @@ a {
 .header {
   background-color: #280b3f;
   display: flex;
-  height: 10vh;
+  height: 6vh;
   width: 100%;
   border-bottom: 3px solid #810baf;
   justify-content: center;
@@ -61,7 +60,7 @@ a {
 }
 
 .navbar {
-  width: 300px;
+  width: 22%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,9 +70,11 @@ a {
 
 
 .titulo {
-  margin-top: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: #32b9cd;
-  width: fit-content;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -91,14 +92,13 @@ a {
 }
 
 .div_perfil {
-
   cursor: pointer;
   padding: 10px 10px;
 }
 
 .container_select {
   justify-content: end;
-  margin-left: 10%;
+  margin-left: 4.7%;
   z-index: 1;
 }
 
@@ -117,12 +117,12 @@ a {
 
 .div_select.show {
   position: fixed;
-  margin-top: 4%;
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 5px;
-  height: 118px;
+  height: 80px;
   width: 175px;
   background-color: #382F48;
   z-index: 1;

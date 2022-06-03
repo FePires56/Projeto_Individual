@@ -1,3 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  }
+  
+  body {
+    background: linear-gradient(65deg, #500b88, #400d9e, #0b3388);
+    background-size: 600% 600%;
+    animation: colors 6s ease infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes colors {
+    0% {
+      background-position-x: 0%;
+    }
+  
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  
+  #espacamento {
+    height: 6vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 86vw;
+    display: flex;
+  }
+  
+  /*Inicio header*/
+  .header {
+    background-color: #280b3fb5;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+  }
+  
+  .header a {
+    color: #ffffff;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+  }
+  
+  
+  .titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #32b9cd;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .li_login {
+    border: 2px solid #ffffff;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .li_login:hover {
+    background-color: #50485E;
+  }
+  
+/* fim do header */
+
+
 #index_cadastro {
     margin: 0 auto;
     padding: 0;
@@ -18,9 +112,8 @@
 
 }
 
-.card_cadastro{
+.card_cadastro_1{
     margin: auto;
-    display: flex;
     height: 70vh;
     width: 40vw;
     background-color: #0000007e;
@@ -32,6 +125,8 @@
     border-bottom-right-radius: 30%;
     overflow: hidden;
 }
+
+
 
 .input_cadastro{
     position: relative;
@@ -50,7 +145,7 @@
 
 input{
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     border: none;
     border-bottom: 2px solid #8f8f8f;
     outline: 0px;
@@ -115,9 +210,134 @@ input{
     justify-content: center;
     flex-direction: column;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .a_cadastro:hover{
     background-color: #561888;
+}
+
+span{
+    width: 40%;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 2vh;
+}
+
+.a_logar-se{
+    margin-left: 3%;
+    color: #32b9cd;
+}
+
+.btn_cancelar{
+    margin-top: 3%;
+    font-size: 20px;
+    display: flex;
+    width: 10%;
+    height: 5%;
+    color: #32b9cd;
+    border-bottom: 2px solid #32b9cd;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.card_cadastro_2{
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    width: 40vw;
+    background-color: #0000007e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #810baf;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    overflow: hidden;
+}
+
+.input_pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 10vh;
+}
+
+.h1_valorTotal{
+    display: flex;
+    margin-bottom: 4vh;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#sel_meses{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    padding: 15px 45px;
+    background-color: #280b3f;
+    color: #ffffff;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+
+.btn_voltar{
+    margin-top: 2%;
+    font-size: 20px;
+    display: flex;
+    width: 10%;
+    height: 5%;
+    color: #32b9cd;
+    border-bottom: 2px solid #32b9cd;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input_validade{
+    display: flex;
+    gap: 20%;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#validade_mes{
+    display: flex;
+    padding: 10px 40px;
+    background-color: #280b3f;
+    color: #ffffff;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+#validade_ano{
+    display: flex;
+    padding: 10px 40px;
+    background-color: #280b3f;
+    color: #ffffff;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.card_cadastro_3{
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    width: 40vw;
+    background-color: #0000007e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #810baf;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    overflow: hidden;
 }
 

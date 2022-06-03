@@ -8,6 +8,7 @@
 
     <title>AcquaTec | Página Inicial</title>
 
+    <script src="./js/header.js"></script>
     <script src="./js/funcoes.js"></script>
 
     <link rel="stylesheet" href="css/global.css">
@@ -19,7 +20,6 @@
 </head>
 
 <body>
-
     <div class="header">
         <div class="container">
             <h1 class="titulo">FPGames</h1>
@@ -39,25 +39,19 @@
 
         </div>
     </div>
+
     <div class="container container_select">
         <div id="id_select" class="div_select">
-            <div class="itens_select sobrenos_select">
-                <div class="espacamento_select">
-                    <img src="img/coroa.png">
-                    <b><a class="a_select" href="">Sobre nós</a></b>
-                </div>
-            </div>
-
             <div class="itens_select suporte_select">
                 <div class="espacamento_select">
-                    <img src="img/interrogacao.png">
-                    <b><a class="a_select" href="">Suporte</a></b>
+                    <img src="img/engrenagem.png" height="16px">
+                    <b><a class="a_select" href="">Configuração</a></b>
                 </div>
             </div>
             <div class="itens_select login_select">
                 <div class="espacamento_select">
                     <img src="img/saida.png">
-                    <b class="b_select"><a class="a_select" href="">Fazer login</a></b>
+                    <b class="b_select"><a class="a_select" href="home.html">Sair</a></b>
                 </div>
             </div>
         </div>
@@ -104,7 +98,7 @@
 
             <div class="btns_categorias">
                 <button class="btn_categoria" id="btn_todos" onclick="todos()">Todos</button>
-                <button class="btn_categoria" id="btn_aventura"onclick="aventura()">Ação e aventura</button>
+                <button class="btn_categoria" id="btn_aventura" onclick="aventura()">Ação e aventura</button>
                 <button class="btn_categoria" id="btn_acao" onclick="acao()">Ação</button>
                 <button class="btn_categoria" id="btn_terror" onclick="terror()">Terror</button>
                 <button class="btn_categoria" id="btn_estrategia" onclick="estrategia()">Estratégia</button>
@@ -758,20 +752,3 @@
 </body>
 
 </html>
-
-<script>
-    var booleanPerfil = 0
-
-    function select_perfil() {
-        if (booleanPerfil == 0) {
-            booleanPerfil = 1
-            id_select.classList.add('show')
-            seta.classList.add('virar')
-        } else {
-            booleanPerfil = 0
-            id_select.classList.remove('show')
-            seta.classList.remove('virar')
-
-        }
-    }
-</script>

@@ -1,3 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  }
+  
+  body {
+    background: linear-gradient(65deg, #500b88, #400d9e, #0b3388);
+    background-size: 600% 600%;
+    animation: colors 6s ease infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes colors {
+    0% {
+      background-position-x: 0%;
+    }
+  
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  
+  #espacamento {
+    height: 6vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 86vw;
+    display: flex;
+  }
+  
+  /*Inicio header*/
+  .header {
+    background-color: #280b3fb5;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+  }
+  
+  .header a {
+    color: #ffffff;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+  }
+  
+  
+  .titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #32b9cd;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .li_login {
+    border: 2px solid #ffffff;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .li_login:hover {
+    background-color: #50485E;
+  }
+  
+/* fim do header */
+
 #index_login {
     margin: 0 auto;
     padding: 0;
@@ -121,3 +214,27 @@ input{
     background-color: #561888;
 }
 
+span{
+    width: 45%;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 2vh;
+}
+
+.a_cadastre-se{
+    margin-left: 3%;
+    color: #32b9cd;
+}
+
+.btn_cancelar{
+    margin-top: 3%;
+    font-size: 20px;
+    display: flex;
+    width: 10%;
+    height: 5%;
+    color: #32b9cd;
+    border-bottom: 2px solid #32b9cd;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
