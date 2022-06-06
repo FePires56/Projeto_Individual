@@ -74,7 +74,6 @@
 </html>
 
 <script>
-
     let proximaAtualizacao;
 
     window.onload = obterDadosGrafico(1);
@@ -90,18 +89,20 @@
             clearTimeout(proximaAtualizacao);
         }
 
-        fetch(`/medidas/ultimas/`, { cache: 'no-store' }).then(function (response) {
-            if (response.ok) {
-                response.json().then(function (resposta) {
-                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                    resposta.reverse();
+        fetch(`/medidas/ultimas/`, {
+                cache: 'no-store'
+            }).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        resposta.reverse();
 
-                    plotarGrafico(resposta, );
-                });
-            } else {
-                console.error('Nenhum dado encontrado ou erro na API');
-            }
-        })
+                        plotarGrafico(resposta, );
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
@@ -113,43 +114,39 @@
         console.log('iniciando plotagem do gráfico...');
 
         var dados = {
-            labels: [],
-            datasets: [
-                {
+            labels: ['Ação e Aventura', 'Ação', 'Terror', 'Estratégia', 'Esportes', 'Diversão', 'FPS', 'RPG'],
+            datasets: [{
                     yAxisID: 'y-umidade',
-                    label: 'Umidade',
+                    label: 'Categorias',
                     borderColor: '#32B9CD',
                     backgroundColor: '#32b9cd8f',
                     fill: true,
                     data: []
-                },
-                {
-                    yAxisID: 'y-temperatura',
-                    label: 'Temperatura',
-                    borderColor: '#FFF',
-                    backgroundColor: '#32b9cd8f',
-                    fill: true,
-                    data: []
                 }
+
             ]
         };
 
-        for (i = 0; i < resposta.length; i++) {
-            var registro = resposta[i];
-            dados.labels.push(registro.momento_grafico);
-            dados.datasets[0].data.push(registro.umidade);
-            dados.datasets[1].data.push(registro.temperatura);
-        }
+        dados.datasets[0].data.push(resposta[7].QtdVotos);
+        dados.datasets[0].data.push(resposta[6].QtdVotos);
+        dados.datasets[0].data.push(resposta[5].QtdVotos);
+        dados.datasets[0].data.push(resposta[4].QtdVotos);
+        dados.datasets[0].data.push(resposta[3].QtdVotos);
+        dados.datasets[0].data.push(resposta[2].QtdVotos);
+        dados.datasets[0].data.push(resposta[1].QtdVotos);
+        dados.datasets[0].data.push(resposta[0].QtdVotos);
 
         console.log(JSON.stringify(dados));
 
         var ctx = canvas_grafico.getContext('2d');
-        window.grafico_linha = Chart.Line(ctx, {
+        window.grafico_linha = Chart.Bar(ctx, {
             data: dados,
             //Configurações do gráfico
             options: {
                 responsive: true,
-                animation: { duration: 500 },
+                animation: {
+                    duration: 500
+                },
                 hoverMode: 'index',
                 stacked: false,
                 title: {
@@ -164,7 +161,7 @@
                         id: 'y-temperatura',
                         ticks: {
                             beginAtZero: true,
-                            max: 100,
+                            max: 10,
                             min: 0
                         }
                     }, {
@@ -174,7 +171,7 @@
                         id: 'y-umidade',
                         ticks: {
                             beginAtZero: true,
-                            max: 100,
+                            max: 10,
                             min: 0
                         },
 
@@ -187,50 +184,50 @@
         });
 
         function sendData() {
-			var http = new XMLHttpRequest();
-			http.open('POST', 'http://localhost:3000/api/sendData', false);
-			http.send(null);
-		}
+            var http = new XMLHttpRequest();
+            http.open('POST', 'http://localhost:3000/api/sendData', false);
+            http.send(null);
+        }
 
         setInterval(() => {
-			sendData();
-		}, 2000);
+            sendData();
+        }, 2000);
 
         //Atualiza os dados de 5 em 5 segundos
-        setTimeout(() => atualizarGrafico(dados), 2000);
+        // setTimeout(() => atualizarGrafico(dados), 2000);
     }
 
     // só mexer se quiser alterar o tempo de atualização
     // ou se souber o que está fazendo!
-    function atualizarGrafico(dados) {
+    // function atualizarGrafico(dados) {
 
-        fetch(`/medidas/tempo-real/`, { cache: 'no-store' }).then(function (response) {
-            if (response.ok) {
-                response.json().then(function (novoRegistro) {
+    //     fetch(`/medidas/tempo-real/`, {
+    //             cache: 'no-store'
+    //         }).then(function (response) {
+    //             if (response.ok) {
+    //                 response.json().then(function (novoRegistro) {
 
-                    console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-                    console.log(`Dados atuais do gráfico: ${dados}`);
+    //                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+    //                     console.log(`Dados atuais do gráfico: ${dados}`);
 
-                    // tirando e colocando valores no gráfico
-                    dados.labels.shift(); // apagar o primeiro
-                    dados.labels.push(novoRegistro[0].momento_grafico); // incluir um novo momento
-                    dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-                    dados.datasets[0].data.push(novoRegistro[0].umidade); // incluir uma nova medida de umidade
-                    dados.datasets[1].data.shift();  // apagar o primeiro de umidade
-                    dados.datasets[1].data.push(novoRegistro[0].temperatura); // incluir uma nova medida de umidade
+    //                     // tirando e colocando valores no gráfico
+    //                     dados.datasets[0].data.push(novoRegistro[0]
+    //                     .umidade); // incluir uma nova medida de umidade
+    //                     dados.datasets[1].data.push(novoRegistro[0]
+    //                     .temperatura); // incluir uma nova medida de umidade
 
-                    window.grafico_linha.update();
+    //                     window.grafico_linha.update();
 
-                    proximaAtualizacao = setTimeout(() => atualizarGrafico(dados), 2000);
-                });
-            } else {
-                console.error('Nenhum dado encontrado ou erro na API');
-                proximaAtualizacao = setTimeout(() => atualizarGrafico(dados), 2000);
-            }
-        })
-            .catch(function (error) {
-                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-            });
+    //                     proximaAtualizacao = setTimeout(() => atualizarGrafico(dados), 2000);
+    //                 });
+    //             } else {
+    //                 console.error('Nenhum dado encontrado ou erro na API');
+    //                 proximaAtualizacao = setTimeout(() => atualizarGrafico(dados), 2000);
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    //         });
 
-    }
+    // }
 </script>
