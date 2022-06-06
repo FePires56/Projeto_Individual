@@ -73,7 +73,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #32b9cd;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 500;
   }
@@ -144,8 +144,8 @@ h2 {
 }
 
 .a_parte1 {
-    background-color: #1d96a8;
-    border: 2px solid #1d96a8;
+    background-color: #696840;
+    border: 2px solid #4d0845;
     color: #ffffff;
     padding: 15px 80px;
     border-radius: 5px;
@@ -155,7 +155,7 @@ h2 {
 }
 
 .a_parte1:hover{
-    background-color: #3fa8b8;
+    background-color: #adab2c;
 }
 
 #parte2 {

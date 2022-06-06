@@ -71,9 +71,10 @@ function cadastrar() {
 
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
-    var nomeVar = nome_input.value;
-    var emailVar = email_input.value;
-    var senhaVar = in_senha.value;
+    let nomeVar = nome_input.value;
+    let emailVar = email_input.value;
+    let senhaVar = in_senha.value;
+    let fkVotacaoVar = categoria_favorita.value;
 
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
@@ -86,15 +87,18 @@ function cadastrar() {
             // Agora vá para o arquivo routes/usuario.js
             nomeServer: nomeVar,
             emailServer: emailVar,
-            senhaServer: senhaVar
+            senhaServer: senhaVar,
+            fkVotacaoServer: fkVotacaoVar
         })
     }).then(function (resposta) {
 
         console.log("resposta: ", resposta);
 
-            setTimeout(() => {
-                window.location = "login.html";
-            }, "2000")
+            if(resposta.ok){
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "1000")
+            }
 
     }).catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
