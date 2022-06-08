@@ -22,7 +22,7 @@ var mySqlConfig = {
     host: "localhost",
     user: "root",
     database: "PlayCloud",
-    password: "12345'",
+    password: "12345",
     
 };
 

@@ -1,25 +1,70 @@
-/* pagina mural */
-
-*,
 body {
-  font-family: "Exo 2", sans-serif;
+  overflow-x: hidden;
+  height: auto;
 }
 
+/* pagina mural */
+
+.dash-janela {
+
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dash-right {
+  border-top: 2px solid #810baf;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  height: 172vh;
+  background-color: #0000007e;
+  position: relative;
+  top: 0;
+}
+
+
 .dash-right .avisos {
+  position: relative;
+  display: flex;
   width: 100%;
+
   /* border: 3px solid pink; */
-  color: rgb(216, 216, 216);
-  font-family: "Exo 2", sans-serif;
+  color: #d8d8d8;
+}
+
+
+
+.h1_mural_2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  height: 45vh;
+  background-color: #280b3fa8;
+
 }
 
 .dash-right .avisos .container {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .dash-right .avisos .container .div-form {
-  width: 100%;
+  display: flex;
+margin: auto;
+  width: 80%;
 }
 
 .dash-right .avisos .container .div-form #form_postagem {
@@ -27,23 +72,29 @@ body {
 }
 
 .dash-right .avisos .div-form label {
-  width: 100%;
+  width: 80%;
 }
 
-.dash-right .avisos .div-form input {
-  width: 100%;
+.dash-right .avisos .div-form {
+  width: 96%;
   border-radius: 5px;
 }
 
 .dash-right .avisos .div-form textarea {
   width: 100%;
-  /* color: #E6005A; */
-  border: 3px solid #e6005a;
+  /* color: #280b3f; */
+  border: 3px solid #810baf;
   background-color: white;
   border-radius: 5px;
+  margin-bottom: 2vh;
+  text-indent: 1%;
 }
 
 .dash-right .avisos .div-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   cursor: pointer;
   font-family: "Exo 2", sans-serif;
   border: 0;
@@ -52,8 +103,14 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
-  width: 120px;
+  border: 2px solid #810baf;
+  background-color: #4d117f;
+  width: 60%;
+  height: 6vh;
+}
+
+.dash-right .avisos .div-form button:hover {
+  background-color: #6d2b8a;
 }
 
 .publicacao-btn-editar {
@@ -63,58 +120,57 @@ body {
   border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
-  padding: 5px 8px;
   color: white;
-  background-color: #e6005a;
+  border: 2px solid #810baf;
+  background-color: #4d117f;
   width: 80px;
+}
+
+.publicacao-btn-editar {
+  background-color: #6d2b8a;
 }
 
 .publicacao {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+  align-content: center;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  border-bottom: 3px solid #e6005a;
+  align-items: center;
+  border-bottom: 3px solid #810baf;
   padding: 20px;
 }
 
-.publicacao > *:not(:last-child) {
+.publicacao>*:not(:last-child) {
   padding: 0 0 10px 0;
 }
 
 .div-results {
-  width: 100%;
+  width: 50%;
 }
 
 .div-results .feed-container {
-  background-color: #212124;
+  background-color: #280b3fa8;;
   border-radius: 5px;
   margin-bottom: 80px;
 }
 
 .div-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-.div-buttons > * {
-  margin-left: 30px;
-}
+
 
 /* pagina graficos */
 
-.dash-header {
-  background-color: #212124;
-}
 
 .dash {
-  width: 75%;
+  margin: auto;
+  width: 80%;
   position: relative;
   top: 0;
-  left: 25%;
-  background-color: #161618;
+  background-color: #0000007e;
 
   /* width: 75%;
     display: flex;
@@ -122,14 +178,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;*/
-  height: 100vh;
+  height: 94vh;
+}
+
+.grafico {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .regua {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 10%;
   margin-top: 30px;
 }
 
@@ -181,6 +243,7 @@ body {
   justify-content: right;
   background-color: #212124;
   font-size: 20px;
+  margin-bottom: 5vh;
 }
 
 .card p {
@@ -225,6 +288,7 @@ body {
   width: 80%;
   margin: auto;
   padding-top: 45px;
+
 }
 
 .btn-chart {
@@ -234,6 +298,7 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #4d117f;
+  border-radius: 5px;
   margin: 5px;
 }

@@ -135,6 +135,7 @@
 }
 
 .card {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -259,39 +260,7 @@
 
 
 
-/* LOGIN */
 
-.banner .container .card {
-  background-color: #e5e5e5;
-  height: fit-content;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  color: palevioletred;
-  align-items: center;
-  border-radius: 4px;
-}
-
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card h2 {
-  font-size: 30px;
-}
-
-.card h4 {
-  font-size: 16px;
-}
-
-.banner #div_erros_login {
-  margin-top: 15px;
-}
-
-button {
-  cursor: pointer;
-}
 
 /* FORMULARIO */
 
@@ -328,8 +297,9 @@ button {
 }
 
 input {
+  margin: auto;
   margin-bottom: 10px;
-  border: 2px solid #32b9cd;
+  border: 2px solid #810baf;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -390,12 +360,11 @@ input {
 
 .dash-right {
   display: flex;
-  width: 75%;
-  height: fit-content;
+  width: 80%;
   background-color: #161618;
   position: relative;
   top: 0;
-  left: 25%;
+
 }
 
 .header-left h1 {

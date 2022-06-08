@@ -72,7 +72,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: #32b9cd;
+  color: #ffffff;
   font-size: 30px;
   font-weight: 500;
 }
@@ -114,8 +114,8 @@ a {
 
 .card_cadastro_1 {
   margin: auto;
-  height: 70vh;
-  width: 40vw;
+  height: 85vh;
+  width: 42vw;
   background-color: #0000007e;
   flex-direction: column;
   align-items: center;
@@ -265,8 +265,8 @@ span {
 .card_cadastro_2 {
   position: relative;
   margin: auto;
-  height: 70vh;
-  width: 40vw;
+  height: 85vh;
+  width: 42vw;
   background-color: #0000007e;
   flex-direction: column;
   align-items: center;
@@ -348,8 +348,8 @@ span {
 .card_cadastro_3 {
   position: relative;
   margin: auto;
-  height: 70vh;
-  width: 40vw;
+  height: 85vh;
+  width: 42vw;
   background-color: #0000007e;
   flex-direction: column;
   align-items: center;

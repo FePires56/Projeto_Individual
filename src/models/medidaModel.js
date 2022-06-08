@@ -6,7 +6,8 @@ function buscarUltimasMedidas(limite_linhas) {
 
 
     if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `select count(idUsuario) as QtdVotos from Usuario GROUP BY fkVotacao ORDER BY fkVotacao;`;
+        instrucaoSql = `select count(idUsuario) as QtdVotos, nomeCategoria from Usuario inner join votacao on fkVotacao = idVotacao GROUP BY idVotacao ORDER BY idVotacao;
+        `;
         console.log("Executando a instrução SQL: \n" + instrucaoSql);
          
  }
